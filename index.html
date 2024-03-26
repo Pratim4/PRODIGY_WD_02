@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop-Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper" id="wrapper">
+        <div class="time">
+            <div class="display">
+                <p class="timerDisplay" id="timerHrs">00</p> :
+                <p class="timerDisplay" id="timerMins">00</p> :
+                <p class="timerDisplay" id="timerSec">00</p> :
+                <p class="timerDisplay" id="timerMilisec">00</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="startBtn" onclick="startStop()">Start</button>
+            <button class="btn" id="resetBtn" onclick="reset()">Reset</button>
+            <button class="btn" id="lapBtn" onclick="lap()">Lap</button>
+        </div>
+
+        <h1>Laps:</h1>
+
+        <div id="laps">
+            <p id="lapRecord"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
